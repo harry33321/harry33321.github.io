@@ -8,6 +8,32 @@ export default function Home() {
         <h1>
             <Type /><span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
         </h1>
+        {/* adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br />
+        adw<br /> */}
     </div>
   )
 }
