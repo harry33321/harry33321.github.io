@@ -67,7 +67,7 @@ export default function NavBar() {
 
                     <Nav.Link
                         as={Link}
-                        to="/project"
+                        to="/projects"
                         onClick={handleExpanded}
                     >
                         <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
