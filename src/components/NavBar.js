@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import logo from "../images/logo.svg";
 import { Link } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap";
+import logo from "../images/logo.svg";
 import { VscGithub } from "react-icons/vsc"
 import { CgFileDocument } from "react-icons/cg";
 import {
@@ -34,7 +33,7 @@ export default function NavBar() {
             expanded={expanded}
             fixed="top"
             expand="md"
-            className={navColor ? "sticky" : "navbar"}
+            className={navColor ? "navbarSticky" : "navbar"}
         >
             <Navbar.Brand href="/">
                 <img src={logo} className="img-fluid logo" alt="brand" />
@@ -49,47 +48,24 @@ export default function NavBar() {
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto" defaultActiveKey="#home">
-                    <Nav.Link
-                        as={Link}
-                        to="/"
-                        onClick={handleExpanded}
-                    >
+                    <Nav.Link as={Link} to="/" onClick={handleExpanded}>
                         <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
                     </Nav.Link>
 
-                    <Nav.Link
-                        as={Link}
-                        to="/about"
-                        onClick={handleExpanded}
-                    >
+                    {/* <Nav.Link as={Link} to="/about" onClick={handleExpanded}>
                         <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                    </Nav.Link> */}
+
+                    <Nav.Link as={Link} to="/projects" onClick={handleExpanded}>
+                        <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
                     </Nav.Link>
 
-                    <Nav.Link
-                        as={Link}
-                        to="/projects"
-                        onClick={handleExpanded}
-                    >
-                        <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
-                        Projects
-                    </Nav.Link>
-
-                    <Nav.Link
-                        as={Link}
-                        to="/resume"
-                        onClick={handleExpanded}
-                    >
+                    <Nav.Link as={Link} to="/resume" onClick={handleExpanded}>
                         <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
                     </Nav.Link>
 
-                    <Nav.Link
-                        href="https://github.com/harry33321/"
-                        target="_blank"
-                        rel="noreferrer"
-                        onClick={handleExpanded}
-                    >
-                        <VscGithub style={{ marginBottom: "2px" }} />{" "}
-                        GitHub
+                    <Nav.Link href="https://github.com/harry33321/" target="_blank" rel="noreferrer" onClick={handleExpanded}>
+                        <VscGithub style={{ marginBottom: "2px" }} /> GitHub
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>

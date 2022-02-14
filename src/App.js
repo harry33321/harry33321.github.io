@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Particle from "./components/Particle";
 import NavBar from "./components/NavBar";

@@ -23,34 +23,23 @@ export default function Projects() {
                     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                         <Col md={6} xxl={4} className="project-card">
                             <ProjectCard
-                                imgPath={NumberGuesser}
-                                title="Number Guesser"
+                                imgPath={MyPortfolio}
+                                title="My Portfolio"
                                 description=""
-                                skills="JavaScript"
-                                codeLink="https://github.com/harry33321/Number-Guesser"
-                                projectLink="https://harry33321.github.io/Number-Guesser"
+                                skills="React"
+                                codeLink="https://github.com/harry33321/harry33321.github.io"
+                                projectLink="https://harry33321.github.io/"
                             />
                         </Col>
 
                         <Col md={6} xxl={4} className="project-card">
                             <ProjectCard
-                                imgPath={FindYourHat}
-                                title="Find Your Hat"
+                                imgPath={TaskManager}
+                                title="Task Manager"
                                 description=""
-                                skills="JavaScript"
-                                codeLink="https://github.com/harry33321/Find-Your-Hat"
-                                projectLink="https://github.com/harry33321/Find-Your-Hat"
-                            />
-                        </Col>
-
-                        <Col md={6} xxl={4} className="project-card">
-                            <ProjectCard
-                                imgPath={ColmarAcademy}
-                                title="Responsive Page"
-                                description=""
-                                skills="HTML, CSS, Bootstrap"
-                                codeLink="https://github.com/harry33321/Colmar-Academy"
-                                projectLink="https://harry33321.github.io/Colmar-Academy"
+                                skills="React, Firebase"
+                                codeLink="https://github.com/harry33321/react-tasks-manager"
+                                projectLink="https://harry33321.github.io/react-tasks-manager"
                             />
                         </Col>
 
@@ -67,23 +56,34 @@ export default function Projects() {
 
                         <Col md={6} xxl={4} className="project-card">
                             <ProjectCard
-                                imgPath={TaskManager}
-                                title="Task Manager"
+                                imgPath={ColmarAcademy}
+                                title="Responsive Page"
                                 description=""
-                                skills="React"
-                                codeLink="https://github.com/harry33321/react-tasks-manager"
-                                projectLink="https://harry33321.github.io/react-tasks-manager"
+                                skills="HTML, CSS, Bootstrap"
+                                codeLink="https://github.com/harry33321/Colmar-Academy"
+                                projectLink="https://harry33321.github.io/Colmar-Academy"
                             />
                         </Col>
 
                         <Col md={6} xxl={4} className="project-card">
                             <ProjectCard
-                                imgPath={MyPortfolio}
-                                title="My Portfolio"
+                                imgPath={FindYourHat}
+                                title="Find Your Hat"
                                 description=""
-                                skills="React"
-                                codeLink="https://github.com/harry33321/harry33321.github.io"
-                                projectLink="https://harry33321.github.io/"
+                                skills="JavaScript"
+                                codeLink="https://github.com/harry33321/Find-Your-Hat"
+                                projectLink="https://github.com/harry33321/Find-Your-Hat"
+                            />
+                        </Col>
+
+                        <Col md={6} xxl={4} className="project-card">
+                            <ProjectCard
+                                imgPath={NumberGuesser}
+                                title="Number Guesser"
+                                description=""
+                                skills="JavaScript"
+                                codeLink="https://github.com/harry33321/Number-Guesser"
+                                projectLink="https://harry33321.github.io/Number-Guesser"
                             />
                         </Col>
                     </Row>
