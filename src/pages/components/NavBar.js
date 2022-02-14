@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
-import logo from "../images/logo.svg";
+import logo from "../../images/logo.svg";
 import { VscGithub } from "react-icons/vsc"
 import { CgFileDocument } from "react-icons/cg";
 import {

@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Particle from "./components/Particle";
-import NavBar from "./components/NavBar";
-import Home from './components/Home';
-import Projects from "./components/Projects";
+import Particle from "./pages/components/Particle";
+import NavBar from "./pages/components/NavBar";
+import Home from './pages/Home';
+import Projects from "./pages/Projects";
 
 
 function App() {

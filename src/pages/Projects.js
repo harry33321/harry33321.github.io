@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./components/ProjectCard";
 import NumberGuesser from "../images/Number-Guesser.png"
 import FindYourHat from "../images/Find-Your-Hat.png"
 import ColmarAcademy from "../images/Colmar-Academy.png"
