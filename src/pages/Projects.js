@@ -1,12 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ProjectCard from "./components/ProjectCard";
-import NumberGuesser from "../images/Number-Guesser.png"
-import FindYourHat from "../images/Find-Your-Hat.png"
-import ColmarAcademy from "../images/Colmar-Academy.png"
-import Ravenous from "../images/Ravenous.png"
-import TaskManager from "../images/Task-Manager.png"
-import MyPortfolio from "../images/MyPortfolio.png"
+import NumberGuesser from "../Assets/Number-Guesser.png"
+import FindYourHat from "../Assets/Find-Your-Hat.png"
+import ColmarAcademy from "../Assets/Colmar-Academy.png"
+import Ravenous from "../Assets/Ravenous.png"
+import TaskManager from "../Assets/Task-Manager.png"
+import MyPortfolio from "../Assets/MyPortfolio.png"
 
 
 export default function Projects() {
