@@ -18,17 +18,17 @@ export default function Particle() {
 				},
 				fpsLimit: 60,
 				interactivity: {
-					events: {
-						onClick: {
-							enable: true,
-							mode: "push",
-						},
+					// events: {
+						// onClick: {
+						// 	enable: true,
+						// 	mode: "push",
+						// },
 						// onHover: {
 						//   enable: true,
 						//   mode: "repulse",
 						// },
 						// resize: true,
-					},
+					// },
 					modes: {
 						bubble: {
 							distance: 400,
