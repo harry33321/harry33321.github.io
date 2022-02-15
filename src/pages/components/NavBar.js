@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../images/logo.svg";
 import { VscGithub } from "react-icons/vsc"
 import { CgFileDocument } from "react-icons/cg";
@@ -30,18 +30,19 @@ export default function NavBar() {
 
     return (
         <Navbar
-            expanded={expanded}
-            fixed="top"
-            expand="md"
-            className={navColor ? "navbarSticky" : "navbar"}
+        expanded={expanded}
+        fixed="top"
+        expand="md"
+        className={navColor ? "navbarSticky" : "navbar"}
         >
+                <Container>
             <Navbar.Brand href="/">
                 <img src={logo} className="img-fluid logo" alt="brand" />
             </Navbar.Brand>
             <Navbar.Toggle
                 aria-controls="responsive-navbar-nav"
                 onClick={() => setExpanded(!expanded)}
-            >
+                >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -69,6 +70,7 @@ export default function NavBar() {
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
+                    </Container>
         </Navbar>
     );
 }
