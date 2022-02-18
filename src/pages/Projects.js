@@ -23,7 +23,7 @@ export default function Projects() {
         // },
         {
             title: "Task Manager",
-            description: "A task manager where you can login to access your tasks, add new tasks, edit, and delete tasks. It also has a calendar that you can see your tasks by date.",
+            description: "A web app where user can login to access your tasks, add new tasks, edit, and delete tasks. It also has a calendar that you can see your tasks by date.",
             skills: "React.js, Firebase",
             imgPath: TaskManager,
             codeLink: "https://github.com/harry33321/react-tasks-manager",
@@ -31,7 +31,7 @@ export default function Projects() {
         },
         {
             title: "Jammming",
-            description: "A music player where you can search for songs and save to Spotify's playlist.",
+            description: "A song finder where user can search the Spotify library, create a custom playlist, then save it to their Spotify account.",
             skills: "React.js, API",
             imgPath: Jammming,
             codeLink: "https://github.com/harry33321/Jammming",
@@ -39,7 +39,7 @@ export default function Projects() {
         },
         {
             title: "Ravenous",
-            description: "A simple restaurant website where you can find the best restaurants in your area.",
+            description: "A simple restaurant website where user can find the best restaurants in your area.",
             skills: "React.js, API",
             imgPath: Ravenous,
             codeLink: "https://github.com/harry33321/Ravenous",
@@ -59,11 +59,11 @@ export default function Projects() {
             skills: "JavaScript",
             imgPath: FindYourHat,
             codeLink: "https://github.com/harry33321/Find-Your-Hat",
-            projectLink: "https://harry33321.github.io/Find-Your-Hat/"
+            projectLink: "https://github.com/harry33321/Find-Your-Hat"
         },
         {
             title: "Number Guesser",
-            description: "A simple number guessing game built with React.js.",
+            description: "A simple number guessing game that the system picks a secret target number randomly, then the player and computer each guess a number, and the party closest to the target number wins.",
             skills: "JavaScript, HTML, CSS",
             imgPath: NumberGuesser,
             codeLink: "https://github.com/harry33321/Number-Guesser",
