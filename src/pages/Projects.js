@@ -1,13 +1,14 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ProjectCard from "./components/ProjectCard";
-import NumberGuesser from "../Assets/Number-Guesser.png"
-import FindYourHat from "../Assets/Find-Your-Hat.png"
-import ColmarAcademy from "../Assets/Colmar-Academy.png"
-import Ravenous from "../Assets/Ravenous.png"
-import Jammming from "../Assets/Jammming.png"
-import TaskManager from "../Assets/Task-Manager.png"
-import MyPortfolio from "../Assets/MyPortfolio.png"
+import NumberGuesser from "../Assets/Number-Guesser.png";
+import FindYourHat from "../Assets/Find-Your-Hat.png";
+import ColmarAcademy from "../Assets/Colmar-Academy.png";
+import Ravenous from "../Assets/Ravenous.png";
+import Jammming from "../Assets/Jammming.png";
+import TaskManager from "../Assets/Task-Manager.png";
+import MyPortfolio from "../Assets/MyPortfolio.png";
+import { Bounce, Fade, Flip } from 'react-reveal';
 
 
 export default function Projects() {
@@ -88,6 +89,7 @@ export default function Projects() {
     }
     window.addEventListener("scroll", reveal);
 
+
     return (
         <Container className="projectPage">
             <h1 className="ta-c">
@@ -96,13 +98,15 @@ export default function Projects() {
             <p className='ta-c'>
                 Here are a few projects I've worked on recently.
             </p>
-            <Row>
-                {projects.map((project, index) => (
-                    <Col md={6} xxl={4} className="projectCol reveal active" key={index}>
-                        <ProjectCard project={project} />
-                    </Col>
-                ))}
-            </Row>
+            <Bounce bottom cascade>
+                <Row>
+                    {projects.map((project, index) => (
+                        <Col md={6} xxl={4} className="projectCol" key={index}>
+                            <ProjectCard project={project} />
+                        </Col>
+                    ))}
+                </Row>
+            </Bounce>
         </Container>
     )
 }
