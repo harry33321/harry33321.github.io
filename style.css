@@ -193,8 +193,17 @@
 }
 
 @media (max-width: 767px) {
+	
 	.homeContent {
 		flex-wrap: wrap;
+	}
+	
+	.homeContent h2 {
+		font-size: 6vmin;
+	}
+
+	.homeContent img {
+		width: 100%
 	}
 }
 
