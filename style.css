@@ -1,8 +1,7 @@
 * {
     z-index: 1;
     color: white;
-	/* padding: 0 !important;
-	margin: 0 !important; */
+	user-select: none;
 }
 
 .purple {
