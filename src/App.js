@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Particle from "./pages/components/Particle";
 import NavBar from "./pages/components/NavBar";
@@ -8,8 +8,7 @@ import Projects from "./pages/Projects";
 
 function App() {
 	return (
-		// <BrowserRouter>
-		<HashRouter>
+		<BrowserRouter basename="/">
 			<Particle />
 			<NavBar />
 			<Routes>
@@ -18,8 +17,7 @@ function App() {
 				<Route path="/projects" element={<Projects />} />
 				{/* <Route path="/resume" component={Resume} /> */}
 			</Routes>
-		</HashRouter>
-		// </BrowserRouter>
+		</BrowserRouter>
 	);
 }
 
