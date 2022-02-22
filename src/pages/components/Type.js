@@ -6,7 +6,8 @@ export default function Type() {
 		<Typewriter
 			options={{
 				strings: [
-					"Welcome to my portfolio",
+					"a Junior Web Developer.",
+					"a Front-End Developer.",
 				],
 				autoStart: true,
 				loop: true,

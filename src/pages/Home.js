@@ -1,29 +1,58 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Type from './components/Type';
-import { Bounce, Fade, Flip, Zoom } from 'react-reveal';
 import homeLogo from '../Assets/HomeLogo.svg';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 
 export default function Home() {
 
+	useEffect(() => {
+        const textEl = document.querySelector(".rubber-band");
+        if (textEl) {
+            const text = textEl.textContent;
+            const swap = text.replace(/\s/g, " ");
+            const letters = swap.split("");
+            const makeSpan = (letter) =>
+                `<span class="rubber-span">${letter}</span>`;
+            let html = "";
+            letters.forEach((letter) => (html += makeSpan(letter)));
+            textEl.innerHTML = html;
+        }
+        const spans = document.querySelectorAll(".rubber-span");
+        spans.forEach((span) => {
+            span.addEventListener("mouseover", () =>
+                span.classList.add("animated", "rubberBand")
+            );
+        });
+        spans.forEach((span) =>
+            span.addEventListener("mouseout", () =>
+                setTimeout(() => {
+                    span.classList.remove("animated", "rubberBand");
+                }, 1000)
+            )
+        );
+    }, []);
+
+	useEffect(() => {
+		const reveals = document.querySelectorAll(".revealRotate");
+		reveals.forEach(reveal => {
+			reveal.classList.add("reveal-active");
+		});
+	}, []);
+
 	return (
 		<div>
-			<h1 className='homeHeader'>
-				<Type /><br />
+			<h1 className='homeHeader rubber-band'>
+				<p>Welcome to my portfolio!</p>
 			</h1>
 			<Container className='homeContent'>
-				<Bounce bottom cascade >
-					<div className="homeLeft">
-						<h2>
-							<p>Hello<span className="wave">👋🏻</span><br />I'm Harry, <br />a Junior Web Developer.</p>
-						</h2>
-					</div>
-				</Bounce>
-				<Flip right>
-					<img src={homeLogo} alt="homeLogo" />
-				</Flip>
-			</Container >
-		</div >
+				<div className="homeLeft">
+					<h2>
+						<p>Hello<span className="wave">👋🏻</span><br />I'm Harry, <br /><Type /></p>
+					</h2>
+				</div>
+				<img src={homeLogo} className="revealRotate" alt="homeLogo" />
+			</Container>
+		</div>
 	)
 }
