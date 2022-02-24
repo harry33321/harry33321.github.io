@@ -45,16 +45,16 @@ export default function Projects() {
         },
         {
             title: "Find Your Hat",
-            description: "A simple game where you have to find the hat that is hiding in the room.",
-            skills: "JavaScript",
+            description: "A simple game where you have to find the hat that is hiding in the map.",
+            skills: "HTML, CSS, JavaScript",
             imgPath: FindYourHat,
             codeLink: "https://github.com/harry33321/Find-Your-Hat",
-            projectLink: "https://github.com/harry33321/Find-Your-Hat"
+            projectLink: "https://harry33321.github.io/Find-Your-Hat"
         },
         {
             title: "Number Guesser",
             description: "A simple number guessing game that the system picks a secret target number randomly, then the player and computer each guess a number, and the party closest to the target number wins.",
-            skills: "JavaScript, HTML, CSS",
+            skills: "HTML, CSS, JavaScript",
             imgPath: NumberGuesser,
             codeLink: "https://github.com/harry33321/Number-Guesser",
             projectLink: "https://harry33321.github.io/Number-Guesser/"
