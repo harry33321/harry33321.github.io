@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.56e6221f.css",
-    "main.js": "/static/js/main.917bfc70.js",
+    "main.js": "/static/js/main.9d93c71d.js",
     "static/media/Ravenous.png": "/static/media/Ravenous.b59d1fbcf4f8130ca5e9.png",
     "static/media/Colmar-Academy.png": "/static/media/Colmar-Academy.f9a75b2cf7c36f292f77.png",
     "static/media/Jammming.png": "/static/media/Jammming.0b8e71ca0b6258b6ebdd.png",
@@ -12,10 +12,10 @@
     "static/media/logo.svg": "/static/media/logo.4a26cfc10e861c78b157c3a5da3a44b9.svg",
     "index.html": "/index.html",
     "main.56e6221f.css.map": "/static/css/main.56e6221f.css.map",
-    "main.917bfc70.js.map": "/static/js/main.917bfc70.js.map"
+    "main.9d93c71d.js.map": "/static/js/main.9d93c71d.js.map"
   },
   "entrypoints": [
     "static/css/main.56e6221f.css",
-    "static/js/main.917bfc70.js"
+    "static/js/main.9d93c71d.js"
   ]
 }
