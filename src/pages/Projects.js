@@ -13,8 +13,8 @@ export default function Projects() {
     const projects = [
         {
             title: "Task Manager",
-            description: "A web app where user can login to access your tasks, add new tasks, edit, and delete tasks. It also has a calendar that you can see your tasks by date.",
-            skills: "React.js, Firebase",
+            description: "A web application with responsive design where user can login to access own tasks, add new tasks, edit, and delete tasks. It also has a calendar that user can see the tasks by date.",
+            skills: "React.js, Firebase, Bootstrap, MUI, jQuery",
             imgPath: TaskManager,
             codeLink: "https://github.com/harry33321/react-tasks-manager",
             projectLink: "https://harry33321.github.io/react-tasks-manager/"
@@ -22,7 +22,7 @@ export default function Projects() {
         {
             title: "Jammming",
             description: "A song finder where user can search the Spotify library, create a custom playlist, then save it to their Spotify account.",
-            skills: "React.js, API",
+            skills: "React.js, Restful API",
             imgPath: Jammming,
             codeLink: "https://github.com/harry33321/Jammming",
             projectLink: "https://harry33321.github.io/Jammming/"
@@ -30,7 +30,7 @@ export default function Projects() {
         {
             title: "Ravenous",
             description: "A simple restaurant website where user can find the best restaurants in your area.",
-            skills: "React.js, API",
+            skills: "React.js, Restful API",
             imgPath: Ravenous,
             codeLink: "https://github.com/harry33321/Ravenous",
             projectLink: "https://harry33321.github.io/Ravenous/"
