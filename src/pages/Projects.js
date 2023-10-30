@@ -7,10 +7,19 @@ import ColmarAcademy from "../Assets/Colmar-Academy.png";
 import Ravenous from "../Assets/Ravenous.png";
 import Jammming from "../Assets/Jammming.png";
 import TaskManager from "../Assets/Task-Manager.png";
+import CustomSelect from "../Assets/Custom-Select.png";
 
 export default function Projects() {
 
     const projects = [
+        {
+            title: "Custom Select",
+            description: "A custom select component that can be used as a replacement for the native select element. It is fully customizable and easy to use. It also supports keyboard navigation and search.",
+            skills: "JavaScript, CSS",
+            imgPath: CustomSelect,
+            codeLink: "https://github.com/harry33321/custom-select",
+            projectLink: "https://github.com/harry33321/custom-select#readme"
+        },
         {
             title: "Task Manager",
             description: "A web application with responsive design where user can login to access own tasks, add new tasks, edit, and delete tasks. It also has a calendar that user can see the tasks by date.",
